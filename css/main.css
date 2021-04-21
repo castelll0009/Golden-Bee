@@ -2,20 +2,13 @@ body{
 	font-family: 'Kaushan Script', cursive;
 	font-family: 'Lato', sans-serif;
 	font-family: 'Zilla Slab', serif;
-	/*
-	background-image: url(https://i.pinimg.com/originals/7a/5c/17/7a5c179f1d5a8bf5d9c53c9eecda3472.gif);*/
 }
 
-img{
-	width: 100%;
-}
-#img-home{	
-	width: 600px;
-	height: 300px;
-	/*max-width: 100%;*/
-	border-radius: 50%;   
-	 box-shadow: 0px 0px 40px -5px; 
-	 box-shadow: none;	 
+#img-home{		
+	width: 30%;
+	border-radius: 60%;   
+	box-shadow: 0px 0px 40px -5px; 
+	box-shadow: none;	 
 }
 
 nav{
