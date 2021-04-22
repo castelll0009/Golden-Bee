@@ -198,8 +198,7 @@ figure img{
 		display: block;
 	}
 
-	figure{
-		background-color: rgb(163, 163, 163);
+	figure{		
 		border-radius: 20px;
 		border-width: 200px;
 		padding: 10px;
