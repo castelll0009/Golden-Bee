@@ -20,8 +20,8 @@
 				<div class="container-header">
 					<span id="menu-button" class="menu-button"><i class="fas fa-bars"></i></span>
 						
-					<div class="container-logo-title">				
-						<img id="zumbido" class=" animate__animated animate__shakeX animate__slow" src="imgs/logo.png" alt="">
+					<div  class="container-logo-title">				
+						<img id="zumbido" onClick="buzzing()" class="animate__animated animate__shakeX animate__fast" src="imgs/logo.png" alt="">
 						<h1>Golden Bee</h1>
 						<h2 style="font-size: 0.6em; margin-top: 20px;">ACIAGO </h2>
 					</div>
@@ -63,8 +63,14 @@
 					</nav>				
 				</div>				
 			</div>
-				
-		</main>
-	
+			
+		</main>	  
+		<audio id="buzz">	  
+	  		<source src="buzz.mp3" type="audio/mpeg">
+	  		Your browser does not support the audio element.
+		</audio>
+
+		<script src="js/menu.js"></script>	
+		<script src="js/jquey.js"></script>  
 	</body>
 </html>

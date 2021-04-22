@@ -1,3 +1,8 @@
-var menuButton = document.getElementsById("menu-button");
+var sound = document.getElementById("buzz");
+var btn = document.getElementById("zumbido");
+	
+	
 
-menuButton.
+	function buzzing() {			
+	    sound.play();	   
+	}

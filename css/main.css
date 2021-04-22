@@ -6,8 +6,12 @@ body{
 main{
 	padding: 10px;
 }
-#zumbido{	
-	animation-direction: reverse;
+#zumbido {
+	
+}
+
+#zumbido:active {	
+	animation: step-start;
 	animation-duration: 0.2s;
 }
 
@@ -27,7 +31,7 @@ a{
 }
 article{	
 	margin-top: 10px;	
-	position: relative;
+	position: relative;	
 	
 }
 .quitar-float{
