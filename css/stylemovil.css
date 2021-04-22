@@ -184,7 +184,7 @@ header{
         padding-right: 20px;
         padding-top: 0px;
         margin-top: 0px;
-        font-size: 0.8em;        
+        font-size: 1em;        
     }
     .container-logo-title img{               
         padding-top: 10px;
@@ -192,9 +192,10 @@ header{
         height: 15%;
     }
    
-    .container-logo-title ,h1{   
-        font-size: 0.1em;
-    }
+    .container-logo-title h1{   
+        font-size: 2em;
+    } 
+   
     .container-menu{       
         display: none;    
         margin-top: 0px;
