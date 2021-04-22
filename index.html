@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset= "utf-8">
-		<link rel="stylesheet" href="css/stylemovil.css">		
+		<link rel="stylesheet" href="css/stylemovil.css">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">  
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">		
@@ -14,49 +15,56 @@
 		<title>5GT</title>
 	</head>
 	<body>
-	<header>
-			<div class="container-header">
-				<div class="container-logo-title">				
-					<img src="imgs/logo.png" alt="">
-					<h1>Golden Bee</h1>
-					<h2 style="font-size: 0.6em; margin-top: 20px;">ACIAGO </h2>
+		<main>
+			<header>							
+				<div class="container-header">
+					<span id="menu-button" class="menu-button"><i class="fas fa-bars"></i></span>
+						
+					<div class="container-logo-title">				
+						<img id="zumbido" class=" animate__animated animate__shakeX animate__slow" src="imgs/logo.png" alt="">
+						<h1>Golden Bee</h1>
+						<h2 style="font-size: 0.6em; margin-top: 20px;">ACIAGO </h2>
+					</div>
+	
+					<div class="container-menu">
+						<nav class="menu"></nav>
+							<ul  class=" menu-ul">
+							<a href = "index.html" >
+								<li href= "index.html" ><label class="fa fa-home" style="color: #E0A023" ></label></li>
+							</a>
+							<a href = "menu.html" >
+								<li  >PRODUCTOS</li>
+							</a>
+							<a href = "contactos.html" >
+								<li >CONTACTOS </li>
+							</a>
+							<a href = "Acercade.html" >
+								<li >ACERCA DE </li>
+							</a>																
+							<li style="color: #E0A023; font-weight: bold;">INICIAR SESION</li>
+						</ul>
+					</div>
 				</div>
+			</header>	
 
-				<div class="container-menu">
-					<nav class="menu"></nav>
-						<ul  class=" menu-ul">
-						<a href = "index.html" >
-							<li href= "index.html" ><label class="fa fa-home" style="color: #E0A023" ></label></li>
-						</a>
-						<a href = "menu.html" >
-							<li >PRODUCTOS <span  class="fa fa-caret-down"></span></li>
-						</a>
-						<a href = "contactos.html" >
-							<li >CONTACTOS <span class="fa fa-caret-down"></span></li>
-						</a>
-						<a href = "Acercade.html" >
-							<li >ACERCA DE <span class="fa fa-caret-down"></span></li>
-						</a>																
-						<li style="color: #E0A023; font-weight: bold;">INICIAR SESION <span class="fa fa-user-circle"></span></li>
-					</ul>
-				</div>
+			<div class="info-container" >		
+				<img id="img-home" src= "imgs/palo-redondo.gif" class="animate__animated animate__fadeIn img-tam-mediano">			
+				<h1 class="fuente-kaushan fuente-tam color-verde animate__animated animate__fadeI" style="color: #E0A023; margin-top: 20px; font-size: 5em;"> 
+					<img src="imgs/logo.png" alt="" style="width: 12%;">Golden Bee</h1>		
+				<div id="div-index" class="animate__animated animate__flipInX">
+					<h2 class="fuente-lato" style="font-size: 1.5em; margin-top:-15px;" >Sabor de la Naturaleza, del campo a tu mesa.</h2>
+					<p style="margin-top: 30px;">Nuestra empresa te brinda la oportunidad de deleitarte en cualquier lugar de la forma mas natural.</p>
+					<nav class="nav-barra-inferior">
+						<a href = "menu.html" class="margen-derecha">Menú</a>
+						<a href = "contactos.html" class="margen-derecha" class="margen-derecha">Contactos</a>
+						<a href = "Acercade.html" class="margen-derecha">Acerca de</a>
+						<a href = "https://sites.google.com/view/spotifynetflixcombo/inicio" class="margen-derecha">Redes Sociales</a>	
+						<a href = "https://www.instagram.com/moss_planet_/">Instragram</a>		
+					</nav>				
+				</div>				
 			</div>
-		</header>			
-		<div style="text-align: center; margin-top: 80px;" >		
-			<img id="img-home" src= "imgs/palo-redondo.gif" class="animate__animated animate__fadeIn img-tam-mediano" style="margin-top: 60px;">			
-			<h1 class="fuente-kaushan fuente-tam color-verde animate__animated animate__fadeI" style="color: #E0A023; margin-top: 20px; font-size: 5em;"> 
-				<img src="imgs/logo.png" alt="" style="width: 12%;">Golden Bee</h1>		
-			<div id="div-index" class="animate__animated animate__flipInX">
-				<h2 class="fuente-lato" style="font-size: 1.5em; margin-top:-15px;" >Sabor de la Naturaleza, del campo a tu mesa.</h2>
-				<p style="margin-top: 30px;">Nuestra empresa te brinda la oportunidad de deleitarte en cualquier lugar de la forma mas natural.</p>
-				<nav class="nav-barra-inferior">
-					<a href = "menu.html" class="margen-derecha">Menú</a>
-					<a href = "contactos.html" class="margen-derecha" class="margen-derecha">Contactos</a>
-					<a href = "Acercade.html" class="margen-derecha">Acerca de</a>
-					<a href = "https://sites.google.com/view/spotifynetflixcombo/inicio" class="margen-derecha">Redes Sociales</a>	
-					<a href = "https://www.instagram.com/moss_planet_/">Instragram</a>		
-				</nav>				
-			</div>				
-		</div>
+				
+		</main>
+	
 	</body>
 </html>

@@ -3,8 +3,16 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-family: 'Zilla Slab', serif;
 }
+main{
+	padding: 10px;
+}
+#zumbido{	
+	animation-direction: reverse;
+	animation-duration: 0.2s;
+}
 
-#img-home{		
+#img-home{			
+	margin-top: 60px;
 	width: 30%;
 	border-radius: 60%;   
 	box-shadow: 0px 0px 40px -5px; 
@@ -118,3 +126,29 @@ h2{
 #img-articulo{
 	animation-delay: 0.5s;
 }
+
+/*	INFO CONTAINER INFORMACION NORMAL DE LA PAGINA WEB*/
+.info-container{
+	text-align: center;
+	 margin-top: 80px;
+}
+@media screen and (max-width: 700px){
+	
+	#img-home{	
+		margin-top: 10px;		
+		width: 100%;
+		height: auto;
+		border-radius: 60%;   
+		box-shadow: 0px 0px 40px -5px; 
+		box-shadow: none;	 
+	}
+	.info-container{
+		text-align: center;
+		margin-top: 80px;
+	}
+	.info-container {
+		font-size: 0.6em;		
+	}		
+	
+}
+	
