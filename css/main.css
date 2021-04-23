@@ -12,6 +12,10 @@ main{
 	margin-top: 20px;
 	font-size: 5em;
 }
+#zumbido{
+	cursor: pointer;
+}
+
 #zumbido:active {	
 	animation: step-start;
 	animation-duration: 0.2s;
@@ -22,10 +26,6 @@ main{
 	width: 30%;
 	border-radius: 60%;   	
 	box-shadow: none;	 			
-}
-
-nav{
-	    /*border-top: 1px solid #F2D02F;*/
 }
 
 a{
@@ -148,12 +148,19 @@ h2{
 	display: flex;	
 	flex-direction: row;		
 	flex-wrap: wrap;		
+	position: relative;
   }
 
-
+.figure-container{
+	position: relative;
+}
 
 
 figure{
+	outline: none;
+	cursor:pointer;
+	transition: all 300ms;
+	position: relative;
 	min-width: 320px;	
 	max-width: 320px;	
 	margin: 10px;
@@ -164,18 +171,8 @@ figure{
 	padding-top: 20px;	
 	
 }
-.div-figure{	
-	max-height: 250px;
-	overflow: hidden;
-	padding-bottom: 20px;
-}
-
-figure:active{
-}
-
-
-figure:hover{
-	border: 1px solid #e2e2e2;
+figure:hover{	
+	position: relative;	
 	padding: 10px;
 	box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
 }
@@ -201,6 +198,31 @@ figure img{
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 700px){
+	
+	.div-figure{		
+		z-index: 20;	
+		border-radius: 20px;
+		background-color: rgb(219, 216, 216);
+		max-height: 250px;
+		overflow: hidden;
+		padding-bottom: 20px;
+		margin-left: -10px;	
+		padding: 0px 5px;			
+		transition: box-shadow 300ms;	
+		transition-duration: 0s ;
+	}
+	.div-figure:active{		
+		background-color: rgb(216, 216, 216);		
+		position: absolute;
+		max-height: max-content;
+		overflow: visible;
+		padding-bottom: 20px;
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
+	}
+
+	
+}
 @media screen and (max-width: 700px){
 	
 
@@ -219,11 +241,9 @@ figure img{
 		width: 20%;		
 	}
 
-	.cards-container{
-		width: 100%;
-		
-	}
-
+	.cards-container{		
+		width: 100%;		
+	}		
 	figure{				
 		border-radius: 20px;
 		border-width: 200px;
@@ -242,8 +262,7 @@ figure img{
 		padding-bottom: 20px;
 	}
 	
-	figure:active{					
-		border: 1px solid #e2e2e2;
+	figure:active{							
 		padding: 10px;
 		box-shadow: 5px 5px 8px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
 	}	
