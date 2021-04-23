@@ -192,6 +192,10 @@ figure img{
 	text-align: center;		
 	margin-top: 10px;
 }
+#img-calidad{
+	width: 500px; ; 
+	margin: auto; 
+}
 
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
@@ -212,7 +216,8 @@ figure img{
 		transition: box-shadow 300ms;	
 		transition-duration: 0s ;
 	}
-	.div-figure:active{		
+	
+	.div-figure:hover{		
 		background-color: rgb(216, 216, 216);		
 		position: absolute;
 		max-height: max-content;
@@ -220,9 +225,10 @@ figure img{
 		padding-bottom: 20px;
 		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
 	}
-
 	
 }
+/*movil///////////////////////////////////////////*/
+/*movil///////////////////////////////////////////*/
 @media screen and (max-width: 700px){
 	
 
@@ -275,6 +281,11 @@ figure img{
 		width : 350px;
 		height : 350px;		
 	}
+	#img-calidad{
+		width: 100%; ; 
+		margin: auto; 
+	}
+	
 	
 }
 	
