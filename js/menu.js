@@ -4,13 +4,11 @@ var menu = document.getElementsByClassName("container-menu");
 var menuDesplegable = document.getElementsById("menu-desplegable");
 var menuButton= document.getElementsById("menu-button");
 
-	function buzzing() {			
+	function buzzing() {					
 	    sound.play();			
 	}	
 	
-	function showMenu(){
-		menuDesplegable.
+	function showMenu(){			
 	}
-
 
 	
