@@ -3,7 +3,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-family: 'Zilla Slab', serif;
 }
-main{		
+main{
 	padding: 10px;		
 }
 
@@ -138,6 +138,7 @@ h2{
 	 margin-top: 80px;
 }
 .cards-container{
+	text-align: center;
 	justify-content: center;
 	width: auto;
 	display: flex;	
