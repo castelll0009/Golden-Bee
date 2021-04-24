@@ -201,6 +201,7 @@ figure img{
 }
 .img-tercio{
 	width: 500px;
+	margin: auto;
 }
 
 /*///////////////////////////////////////////////////////////////////*/
@@ -343,6 +344,11 @@ figure img{
 		margin: auto; 
 	}
 	
+	.img-tercio{
+		width: 100%;
+		margin: auto;
+	}
+		
 	
 }
 	
