@@ -196,7 +196,27 @@ figure img{
 	width: 500px; ; 
 	margin: auto; 
 }
+.div-figure{		
+	z-index: 20;	
+	border-radius: 20px;
+	background-color: rgb(219, 216, 216);
+	max-height: 250px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	margin-left: -10px;	
+	padding: 0px 5px;			
+	transition: box-shadow 300ms;	
+	transition-duration: 0s ;
+}
 
+.div-figure:hover{		
+	background-color: rgb(216, 216, 216);		
+	position: absolute;
+	max-height: max-content;
+	overflow: visible;
+	padding-bottom: 20px;
+	box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
+}
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
@@ -204,27 +224,7 @@ figure img{
 /*///////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 700px){	
 
-	.div-figure{		
-		z-index: 20;	
-		border-radius: 20px;
-		background-color: rgb(219, 216, 216);
-		max-height: 250px;
-		overflow: hidden;
-		padding-bottom: 20px;
-		margin-left: -10px;	
-		padding: 0px 5px;			
-		transition: box-shadow 300ms;	
-		transition-duration: 0s ;
-	}
 	
-	.div-figure:hover{		
-		background-color: rgb(216, 216, 216);		
-		position: absolute;
-		max-height: max-content;
-		overflow: visible;
-		padding-bottom: 20px;
-		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
-	}
 	#beepc{	
 		display: none;				
 	}	
@@ -286,11 +286,32 @@ figure img{
 		overflow: hidden;
 		padding-bottom: 20px;
 	}
+	.div-figure{		
+		z-index: 20;	
+		border-radius: 20px;
+		background-color: rgb(219, 216, 216);
+		max-height: 250px;
+		overflow: hidden;
+		padding-bottom: 20px;
+		margin-left: -10px;	
+		padding: 0px 5px;			
+		transition: box-shadow 300ms;	
+		transition-duration: 0s ;
+	}
 	
+	.div-figure:hover{		
+		background-color: rgb(216, 216, 216);		
+		position: absolute;
+		max-height: max-content;
+		overflow: visible;
+		padding-bottom: 20px;
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
+	}
+	/*
 	figure:active{							
 		padding: 10px;
 		box-shadow: 5px 5px 8px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
-	}	
+	}	*/
 
 	figure img{	
 		width: 50%;
