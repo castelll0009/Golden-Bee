@@ -172,13 +172,14 @@ figure{
 	padding-top: 20px;	
 	
 }
+/*
 figure:hover{	
 	position: relative;	
 	padding: 10px;
 	box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
 }
 
-
+*/
 figure img{	
 	width: 50%;
 }
@@ -272,19 +273,43 @@ figure img{
 	}	
 		
 	figure{		
-		max-height: 270px;		
-		overflow: hidden;
+		max-height: 305px;		
+		
 		border-radius: 20px;
 		border-width: 200px;
 		padding: 10px;
 		padding-top: 20px;		
 			
 	}
-	figure:hover{		
-		max-height: max-content;				
-		padding: 10px;
-		box-shadow: 5px 5px 8px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
+	
+	
+	figure:hover{	
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
+		min-height: 305px;		
+		max-height: 305px;
+		padding: 10px;		
 	}	
+	
+	.div-figure{		
+		z-index: 10;	
+		border-radius: 20px;		
+		max-height: 240px;
+		overflow: hidden;
+		padding-bottom: 20px;
+		margin-left: -10px;	
+		padding: 0px 5px;			
+		transition: box-shadow 300ms;	
+		transition-duration: 0s ;
+	
+	} 
+	.div-figure:hover{		
+		background-color: rgb(216, 216, 216);		
+		position: absolute;
+		max-height: max-content;
+		overflow: visible;
+		padding-bottom: 20px;
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
+	}
 
 	/*
 	.div-figure{		
