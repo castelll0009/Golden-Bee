@@ -236,7 +236,7 @@ figure img{
 @media screen and (max-width: 700px){	 
 
 	#beepc{					
-		width:  8%;
+		width:  10%;
 		position: fixed;		
 		bottom: 2px ;	
 		right: 7.5px;
@@ -247,7 +247,7 @@ figure img{
 
 	#beepc:active{			
 		position: fixed;			
-		width:  8.5%;		
+		width:  10.5%;		
 		opacity: 1;				
 		
 	}		
