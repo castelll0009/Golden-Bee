@@ -47,16 +47,129 @@ function myFunction() {
 $(document).ready(function() {	
 	$(".sona").click(function() {
 	  var elem = $("#toggle").text();
-	  if (elem == "Read More") {
+	  if (elem == "Leer Más") {
 		//Stuff to do when btn is in the read more state
 		$(".puntos").text("");
-		$("#toggle").text("Read Less");
+		$("#toggle").text("Leer Menos");
 		$("#text").slideDown();
 	  } else {
 		//Stuff to do when btn is in the read less state
 		$(".puntos").text("...");
-		$("#toggle").text("Read More");
+		$("#toggle").text("Leer Más");
 		$("#text").slideUp();
+	  }
+	});
+
+	$(".sona2").click(function() {
+	  var elem = $("#toggle2").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos2").text("");
+		$("#toggle2").text("Leer Menos");
+		$("#text2").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos2").text("...");
+		$("#toggle2").text("Leer Más");
+		$("#text2").slideUp();
+	  }
+	});
+	$(".sona3").click(function() {
+	  var elem = $("#toggle3").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos3").text("");
+		$("#toggle3").text("Leer Menos");
+		$("#text3").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos3").text("...");
+		$("#toggle3").text("Leer Más");
+		$("#text3").slideUp();
+	  }
+	});
+	$(".sona4").click(function() {
+	  var elem = $("#toggle4").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos4").text("");
+		$("#toggle4").text("Leer Menos");
+		$("#text4").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos4").text("...");
+		$("#toggle4").text("Leer Más");
+		$("#text4").slideUp();
+	  }
+	});
+	$(".sona5").click(function() {
+	  var elem = $("#toggle5").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos5").text("");
+		$("#toggle5").text("Leer Menos");
+		$("#text5").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos5").text("...");
+		$("#toggle5").text("Leer Más");
+		$("#text5").slideUp();
+	  }
+	});
+	$(".sona6").click(function() {
+	  var elem = $("#toggle6").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos6").text("");
+		$("#toggle6").text("Leer Menos");
+		$("#text6").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos6").text("...");
+		$("#toggle6").text("Leer Más");
+		$("#text6").slideUp();
+	  }
+	});
+	$(".sona7").click(function() {
+	  var elem = $("#toggle7").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos7").text("");
+		$("#toggle7").text("Leer Menos");
+		$("#text7").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos7").text("...");
+		$("#toggle7").text("Leer Más");
+		$("#text7").slideUp();
+	  }
+	});
+	$(".sona8").click(function() {
+	  var elem = $("#toggle8").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos8").text("");
+		$("#toggle8").text("Leer Menos");
+		$("#text8").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos8").text("...");
+		$("#toggle8").text("Leer Más");
+		$("#text8").slideUp();
+	  }
+	});
+	$(".sona9").click(function() {
+	  var elem = $("#toggle9").text();
+	  if (elem == "Leer Más") {
+		//Stuff to do when btn is in the read more state
+		$(".puntos9").text("");
+		$("#toggle9").text("Leer Menos");
+		$("#text9").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$(".puntos9").text("...");
+		$("#toggle9").text("Leer Más");
+		$("#text9").slideUp();
 	  }
 	});
   });
