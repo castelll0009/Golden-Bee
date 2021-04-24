@@ -12,6 +12,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300;400;700&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<title>5GT</title>
 	</head>
 	<body>
@@ -59,17 +60,21 @@
 
 			<div class="cards-container" >
 				<figure class="figure-container">
-					<div class="div-figure" >
+					<div class="sona div-figure " >
 						<img src="imgs/icono-mision.png" alt="">
 						<h1>Mision</h1>
 						<p>Golden Bee Tiene como misión fomentar la
+							<span class="puntos" style="color:rgb(126, 126, 126)">...</span>
+							<span id="text">
 							apicultura, el cuidado de las abejas y el
 							medio ambiente e impulsar el consumo de
 							productos apícolas como miel, polen, jalea
 							real, propóleos y cera, cumpliendo
 							siempre con los más altos estándares de
 							calidad y en busca de mejorar la calidad de
-							vida de apicultores y consumidores.</p>						
+							vida de apicultores y consumidores.</p>										
+							<div id="toggle" >Leer Más</b>					
+							</p>			
 					</div>
 					
 				</figure>	
@@ -79,7 +84,12 @@
 						<img src="imgs/icono-vision.png" alt="">
 						<h1>Vision</h1>
 						<p>Para el año 2026 Golden Bee (ACIAGO) se
-							consolidará como empresa líder a nivel nacional y tendra influencia internacional en
+							consolidará 
+							<span class="puntos" style="color:rgb(126, 126, 126)">...</span>
+							<span id="text">
+							<div id="toggle" >Leer Más</b>					
+							</p>	
+							como empresa líder a nivel nacional y tendra influencia internacional en
 							el fomento de la Apicultura, el cuidado de las abejas
 							y el medio ambiente. Continuará generando
 							procesos de innovación, actualización y
@@ -223,6 +233,6 @@
 		</audio>
 
 		<script src="js/menu.js"></script>	
-		<script src="js/jquery.js"></script>  
+		<script src="js/jquery.js"></script>  				
 	</body>
 </html>

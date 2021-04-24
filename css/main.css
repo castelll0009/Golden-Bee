@@ -170,7 +170,7 @@ figure{
 	border-radius: 20px;
 	border-width: 200px;
 	padding: 10px;
-	padding-top: 20px;	
+	padding-top: 20px;		
 	
 }
 /*
@@ -202,6 +202,9 @@ figure img{
 .img-tercio{
 	width: 500px;
 	margin: auto;
+}
+#text{
+	display:none;
 }
 
 /*///////////////////////////////////////////////////////////////////*/
