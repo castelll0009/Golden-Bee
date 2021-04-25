@@ -165,7 +165,7 @@ figure{
 	position: relative;
 	min-width: 320px;	
 	max-width: 320px;	
-	max-height: max-content;
+	max-height: max-content;	
 	margin: 10px;
 	background-color: rgb(219, 216, 216);
 	border-radius: 20px;
@@ -175,8 +175,7 @@ figure{
 	
 }
 
-figure:hover{	
-	position: relative;	
+figure:hover{		
 	padding: 10px;
 	box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
 }
@@ -204,56 +203,44 @@ figure img{
 	width: 500px;
 	margin: auto;
 }
-
-.div-figure{	
-	transition: all 300ms;	
-	z-index: 20;	
-	border-radius: 20px;
-	background-color: rgb(219, 216, 216);
-	max-height: 250px;
-	overflow: hidden;
-	padding-bottom: 20px;
-	margin-left: -10px;	
-	padding: 0px 5px;			
-	transition: box-shadow 300ms;		
-}
 #text{
 	display:none;
-	font-size: 16px;
 }
 #text2{
 	display:none;
-	font-size: 16px;
 }
 #text3{
 	display:none;
-	font-size: 16px;
 }
 #text4{
 	display:none;
-	font-size: 16px;
 }
 #text5{
 	display:none;
-	font-size: 16px;
 }
 #text6{
 	display:none;
-	font-size: 16px;
 }
 #text7{
 	display:none;
-	font-size: 16px;
 }
 #text8{
 	display:none;
-	font-size: 16px;
 }
 #text9{
 	display:none;
-	font-size: 16px;
 }
+.div-figure{		
+	z-index: 10;	
+	border-radius: 20px;		
+	max-height: 300px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	margin-left: -10px;	
+	padding: 0px 5px;				
+	transition-duration: all 300s ;
 
+} 
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
@@ -261,6 +248,20 @@ figure img{
 /*///////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 700px){	
 
+	/*
+	.div-figure{		
+		z-index: 20;	
+		border-radius: 20px;
+		background-color: rgb(219, 216, 216);
+		max-height: 250px;
+		overflow: hidden;
+		padding-bottom: 20px;
+		margin-left: -10px;	
+		padding: 0px 5px;			
+		transition: box-shadow 300ms;	
+		transition-duration: 0s ;
+	}
+	*/
 	
 	.div-figure:hover{		
 		background-color: rgb(216, 216, 216);		
@@ -268,7 +269,8 @@ figure img{
 		max-height: max-content;
 		overflow: visible;
 		padding-bottom: 20px;
-		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
+
+		/*box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		*/
 	}
 	#beepc{	
 		display: none;				
@@ -314,26 +316,33 @@ figure img{
 	.cards-container{		
 		width: 100%;		
 	}	
-		
+		/*
 	figure{		
-		max-height: 305px;		
-		
+		position: relative;
+		max-height: 305px;				
 		border-radius: 20px;
 		border-width: 200px;
 		padding: 10px;
-		padding-top: 20px;		
+		padding-top: 20px;	
+		transition: all 400ms;	
 			
+	}	
+	*/
+	figure:hover{
+		position: relative;
+		max-height: max-content;
+	}	
+	
+
+	.div-figure:hover{
+		background-color: rgb(216, 216, 216);		
+		position: relative;
+		max-height: max-content;		
+		padding-bottom: 20px;
+		/*box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	*/
 	}
 	
-	
-	figure:hover{	
-		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
-		min-height: 305px;		
-		max-height: 305px;
-		padding: 10px;		
-	}		
-	
-	} 
+	/* completo con sombra
 	.div-figure:hover{		
 		background-color: rgb(216, 216, 216);		
 		position: absolute;
@@ -342,7 +351,7 @@ figure img{
 		padding-bottom: 20px;
 		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
 	}
-
+*/
 	/*
 	.div-figure{		
 		max-height: 250px;
@@ -350,13 +359,8 @@ figure img{
 		position: relative;
 		padding-bottom: 20px;
 	}
-	
-	.div-figure:hover{
-		max-height: max-content;		
-		overflow: hidden;
-		padding-bottom: 20px;
-	}
 	*/
+
 	
 	figure img{	
 		width: 50%;

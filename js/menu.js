@@ -10,14 +10,15 @@ function buzzing() {
 var zoom = false;
 function vistaEscritorio(){	
 	if(zoom == false){
-		document.body.style = "zoom: 45%";
+		document.body.style = "zoom: 45%";		
+
 		zoom = true;
 	}else{
 		document.body.style = "zoom: 100%";
 		zoom = false;
-	}
-	
+	}		
 }
+
 function myFunction() {
 	var dots = document.querySelector(".dots");
 	var moreText = document.querySelector(".more");
@@ -44,29 +45,36 @@ function myFunction() {
 }
 /*///////////JQUERY///////////////////////////////////////*/
 /*///////////JQUERY///////////////////////////////////////*/
-$(document).ready(function() {	
+/*var div_figure = document.querySelector(".div-figure");*/
+	
+$(document).ready(function() {				  
+
+
 	$(".sona").click(function() {
-	  var elem = $("#toggle").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos").text("");
-		$("#toggle").text("Leer Menos");
+	  var elem = $(".puntos").text();
+	  if (elem == "...Leer Más") {
+		//Stuff to do when btn is in the read more state		
 		$("#text").slideDown();
+		$(".puntos").text("");				
+		//configurar el estylo del div 	sacar sombra al clickearse el div-figure	
+		$(".sona").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");
+		
 	  } else {
 		//Stuff to do when btn is in the read less state
-		$(".puntos").text("...");
-		$("#toggle").text("Leer Más");
+		$(".puntos").text("...Leer Más");		
 		$("#text").slideUp();
+		$(".sona").css("box-shadow", "none");
 	  }
 	});
 
 	$(".sona2").click(function() {
 	  var elem = $("#toggle2").text();
-	  if (elem == "Leer Más") {
+	  if (elem == "Leer") {
 		//Stuff to do when btn is in the read more state
+		$("#text2").slideDown();
 		$(".puntos2").text("");
 		$("#toggle2").text("Leer Menos");
-		$("#text2").slideDown();
+		
 	  } else {
 		//Stuff to do when btn is in the read less state
 		$(".puntos2").text("...");
