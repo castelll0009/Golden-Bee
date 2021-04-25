@@ -19,6 +19,8 @@ function vistaEscritorio(){
 	}		
 }
 
+//#region cambiar atributos
+
 function myFunction() {
 	var dots = document.querySelector(".dots");
 	var moreText = document.querySelector(".more");
@@ -43,141 +45,167 @@ function myFunction() {
 	  moreText.style.display = "inline";
 	}
 }
+//#endregion
 /*///////////JQUERY///////////////////////////////////////*/
 /*///////////JQUERY///////////////////////////////////////*/
+
+//#region  estadobase
+
 /*var div_figure = document.querySelector(".div-figure");*/
+/*
+function estadoBase(){
+	$(".puntos").text("...Leer Más");		
+	$("#text").slideUp();
+	$(".sona").css("box-shadow", "none");
 	
+	$(".puntos2").text("...Leer Más");		
+	$("#text2").slideUp();
+	$(".sona2").css("box-shadow", "none");
+
+	$(".puntos3").text("...Leer Más");		
+	$("#text3").slideUp();
+	$(".sona3").css("box-shadow", "none");	
+
+}*/
+//#endregion	
+
+var opcion= 0;
 $(document).ready(function() {				  
 
+	$(".sona").click(function() {	
+		var elem = $(".puntos").text();
+		if (elem == "...Leer Más") {
+		  //si no esta desplegado desplegar y eliminar los 3 puntos
+		  $("#text").slideDown();
+		  $(".puntos").text("");		
+		 /* $(".sona").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
+		  
+		} else {
+		  //Stuff to do when btn is in the read less state		
+		  $(".puntos").text("...Leer Más");	
+		  $("#text").slideUp();		
+		 /* $(".sona").css("box-shadow", "none");*/
+		}
+	  });
+	
+	$(".sona2").click(function() {	
+	  var elem2 = $(".puntos2").text();
+	  if (elem2 == "...Leer Más") {
+		//si no esta desplegado desplegar y eliminar los 3 puntos
+		$("#text2").slideDown();
+		$(".puntos2").text("");		
+		/*$(".sona2").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
+		
+	  } else {
+		//Stuff to do when btn is in the read less state		
+		$(".puntos2").text("...Leer Más");	
+		$("#text2").slideUp();		
+		/*$(".sona2").css("box-shadow", "none");*/
+	  }
+	});
 
-	$(".sona").click(function() {
-	  var elem = $(".puntos").text();
+	
+	$(".sona3").click(function() {
+	  var elem = $(".puntos3").text();
 	  if (elem == "...Leer Más") {
 		//Stuff to do when btn is in the read more state		
-		$("#text").slideDown();
-		$(".puntos").text("");				
-		//configurar el estylo del div 	sacar sombra al clickearse el div-figure	
-		$(".sona").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");
-		
+		$("#text3").slideDown();
+		$(".puntos3").text("");		
+		/*$(".sona3").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
 	  } else {
 		//Stuff to do when btn is in the read less state
-		$(".puntos").text("...Leer Más");		
-		$("#text").slideUp();
-		$(".sona").css("box-shadow", "none");
+		$(".puntos3").text("...Leer Más");		
+		$("#text3").slideUp();
+		/*$(".sona3").css("box-shadow", "none");*/
 	  }
 	});
 
-	$(".sona2").click(function() {
-	  var elem = $("#toggle2").text();
-	  if (elem == "Leer") {
-		//Stuff to do when btn is in the read more state
-		$("#text2").slideDown();
-		$(".puntos2").text("");
-		$("#toggle2").text("Leer Menos");
-		
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos2").text("...");
-		$("#toggle2").text("Leer Más");
-		$("#text2").slideUp();
-	  }
-	});
-	$(".sona3").click(function() {
-	  var elem = $("#toggle3").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos3").text("");
-		$("#toggle3").text("Leer Menos");
-		$("#text3").slideDown();
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos3").text("...");
-		$("#toggle3").text("Leer Más");
-		$("#text3").slideUp();
-	  }
-	});
 	$(".sona4").click(function() {
-	  var elem = $("#toggle4").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos4").text("");
-		$("#toggle4").text("Leer Menos");
-		$("#text4").slideDown();
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos4").text("...");
-		$("#toggle4").text("Leer Más");
-		$("#text4").slideUp();
-	  }
-	});
-	$(".sona5").click(function() {
-	  var elem = $("#toggle5").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos5").text("");
-		$("#toggle5").text("Leer Menos");
-		$("#text5").slideDown();
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos5").text("...");
-		$("#toggle5").text("Leer Más");
-		$("#text5").slideUp();
-	  }
-	});
-	$(".sona6").click(function() {
-	  var elem = $("#toggle6").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos6").text("");
-		$("#toggle6").text("Leer Menos");
-		$("#text6").slideDown();
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos6").text("...");
-		$("#toggle6").text("Leer Más");
-		$("#text6").slideUp();
-	  }
-	});
-	$(".sona7").click(function() {
-	  var elem = $("#toggle7").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos7").text("");
-		$("#toggle7").text("Leer Menos");
-		$("#text7").slideDown();
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos7").text("...");
-		$("#toggle7").text("Leer Más");
-		$("#text7").slideUp();
-	  }
-	});
-	$(".sona8").click(function() {
-	  var elem = $("#toggle8").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos8").text("");
-		$("#toggle8").text("Leer Menos");
-		$("#text8").slideDown();
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos8").text("...");
-		$("#toggle8").text("Leer Más");
-		$("#text8").slideUp();
-	  }
-	});
-	$(".sona9").click(function() {
-	  var elem = $("#toggle9").text();
-	  if (elem == "Leer Más") {
-		//Stuff to do when btn is in the read more state
-		$(".puntos9").text("");
-		$("#toggle9").text("Leer Menos");
-		$("#text9").slideDown();
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos9").text("...");
-		$("#toggle9").text("Leer Más");
-		$("#text9").slideUp();
-	  }
-	});
+		var elem = $(".puntos4").text();
+		if (elem == "...Leer Más") {
+		  //Stuff to do when btn is in the read more state		
+		  $("#text4").slideDown();
+		  $(".puntos4").text("");		
+		  /*$(".sona4").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
+		} else {
+		  //Stuff to do when btn is in the read less state
+		  $(".puntos4").text("...Leer Más");		
+		  $("#text4").slideUp();
+		  /*$(".sona4").css("box-shadow", "none");*/
+		}
+	  });
+  
+	  $(".sona5").click(function() {
+		var elem = $(".puntos5").text();
+		if (elem == "...Leer Más") {
+		  //Stuff to do when btn is in the read more state		
+		  $("#text5").slideDown();
+		  $(".puntos5").text("");		
+		  /*$(".sona5").css("box-shadow", "2px 2px 5px  #bbbab8, 10px 10px 10px rgb(151, 151, 151)");*/
+		} else {
+		  //Stuff to do when btn is in the read less state
+		  $(".puntos5").text("...Leer Más");		
+		  $("#text5").slideUp();
+		  /*$(".sona4").css("box-shadow", "none");*/
+		}
+	  });
+
+	  $(".sona6").click(function() {
+		var elem = $(".puntos6").text();
+		if (elem == "...Leer Más") {
+		  //Stuff to do when btn is in the read more state		
+		  $("#text6").slideDown();
+		  $(".puntos6").text("");		
+		  /*$(".sona6").css("box-shadow", "2px 2px 6px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
+		} else {
+		  //Stuff to do when btn is in the read less state
+		  $(".puntos6").text("...Leer Más");		
+		  $("#text6").slideUp();
+		  /*$(".sona4").css("box-shadow", "none");*/
+		}
+	  });
+		  
+	  $(".sona7").click(function() {
+		var elem = $(".puntos7").text();
+		if (elem == "...Leer Más") {
+		  //Stuff to do when btn is in the read more state		
+		  $("#text7").slideDown();
+		  $(".puntos7").text("");		
+		  /*$(".sona7").css("box-shadow", "2px 2px 7px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
+		} else {
+		  //Stuff to do when btn is in the read less state
+		  $(".puntos7").text("...Leer Más");		
+		  $("#text7").slideUp();
+		  /*$(".sona4").css("box-shadow", "none");*/
+		}
+	  });
+	  $(".sona8").click(function() {
+		var elem = $(".puntos8").text();
+		if (elem == "...Leer Más") {
+		  //Stuff to do when btn is in the read more state		
+		  $("#text8").slideDown();
+		  $(".puntos8").text("");		
+		  /*$(".sona8").css("box-shadow", "2px 2px 8px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
+		} else {
+		  //Stuff to do when btn is in the read less state
+		  $(".puntos8").text("...Leer Más");		
+		  $("#text8").slideUp();
+		  /*$(".sona4").css("box-shadow", "none");*/
+		}
+	  });
+	
+	  $(".sona9").click(function() {
+		var elem = $(".puntos9").text();
+		if (elem == "...Leer Más") {
+		  //Stuff to do when btn is in the read more state		
+		  $("#text9").slideDown();
+		  $(".puntos9").text("");		
+		  /*$(".sona9").css("box-shadow", "2px 2px 9px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
+		} else {
+		  //Stuff to do when btn is in the read less state
+		  $(".puntos9").text("...Leer Más");		
+		  $("#text9").slideUp();
+		  /*$(".sona4").css("box-shadow", "none");*/
+		}
+	  });
   });

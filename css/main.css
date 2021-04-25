@@ -230,6 +230,7 @@ figure img{
 #text9{
 	display:none;
 }
+/*
 .div-figure{		
 	z-index: 10;	
 	border-radius: 20px;		
@@ -241,6 +242,16 @@ figure img{
 	transition-duration: all 300s ;
 
 } 
+*/
+/*
+.div-figure:hover{
+	background-color: rgb(216, 216, 216);		
+	position: relative;
+	max-height: max-content;		
+	padding-bottom: 20px;
+	box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	
+}
+*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
@@ -269,7 +280,6 @@ figure img{
 		max-height: max-content;
 		overflow: visible;
 		padding-bottom: 20px;
-
 		/*box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		*/
 	}
 	#beepc{	
@@ -333,15 +343,15 @@ figure img{
 		max-height: max-content;
 	}	
 	
-
+/*
 	.div-figure:hover{
 		background-color: rgb(216, 216, 216);		
 		position: relative;
 		max-height: max-content;		
 		padding-bottom: 20px;
-		/*box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	*/
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	
 	}
-	
+	*/
 	/* completo con sombra
 	.div-figure:hover{		
 		background-color: rgb(216, 216, 216);		
