@@ -19,33 +19,6 @@ function vistaEscritorio(){
 	}		
 }
 
-//#region cambiar atributos
-
-function myFunction() {
-	var dots = document.querySelector(".dots");
-	var moreText = document.querySelector(".more");
-	var btnText = document.querySelector(".myBtn");
-
-	/*document.querySelector(".div-figure").style =" background-color: rgb(216, 216, 216); position: absolute; max-height: max-content;overflow: visible;	padding-bottom: 20px; box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);";
-	document.querySelector(".div-figure").style =" background-color: rgb(216, 216, 216); position: absolute; max-height: max-content;overflow: visible;	padding-bottom: 20px; box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);";
-	/*position: absolute;
-		max-height: max-content;
-		overflow: visible;
-		padding-bottom: 20px;
-		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
-		*/
-  
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "Read more"; 
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less"; 
-	  moreText.style.display = "inline";
-	}
-}
-//#endregion
 /*///////////JQUERY///////////////////////////////////////*/
 /*///////////JQUERY///////////////////////////////////////*/
 
@@ -69,143 +42,64 @@ function estadoBase(){
 }*/
 //#endregion	
 
-var opcion= 0;
-$(document).ready(function() {				  
 
-	$(".sona").click(function() {	
-		var elem = $(".puntos").text();
-		if (elem == "...Leer Más") {
-		  //si no esta desplegado desplegar y eliminar los 3 puntos
-		  $("#text").slideDown();
-		  $(".puntos").text("");		
-		 /* $(".sona").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-		  
-		} else {
-		  //Stuff to do when btn is in the read less state		
-		  $(".puntos").text("...Leer Más");	
-		  $("#text").slideUp();		
-		 /* $(".sona").css("box-shadow", "none");*/
-		}
-	  });
+$(document).ready(function() {		
 	
-	$(".sona2").click(function() {	
-	  var elem2 = $(".puntos2").text();
-	  if (elem2 == "...Leer Más") {
-		//si no esta desplegado desplegar y eliminar los 3 puntos
-		$("#text2").slideDown();
-		$(".puntos2").text("");		
-		/*$(".sona2").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-		
-	  } else {
-		//Stuff to do when btn is in the read less state		
-		$(".puntos2").text("...Leer Más");	
-		$("#text2").slideUp();		
-		/*$(".sona2").css("box-shadow", "none");*/
-	  }
+	$(document).ready(() => {
+		$(".sona0").click(function(){
+			var elem = $(".puntos0", this).text();
+/*			$(".puntos0", this).css("display","none");*/
+
+			if (elem == "...Leer Más") {
+				//depliega
+				$(".text0", this).slideDown();
+				$(".puntos0" ,this).text("");													
+				//solo afecta las resoluciones grandes como el PC
+				if($(window).width() > 700){																											
+					$(this).css("position","absolute");	
+					$(".sona0").css("position","relative");	
+					$(this).css("position","absolute");						
+					$(this).css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");								
+				}else{	
+					//si la resolcion es de telefono no0 hacemos nada		
+				}
+				//ahora dependiendo del hover  cambiamos el estilo del Div-figure				
+				$(document).ready(() => {										
+									
+					$(".sona0").hover(function(){						
+						/*alert("sienrttra");			*/												
+						/*$(this).css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");			*/
+						
+					}, function(){											
+						
+						/*alert("salir hover");				*/				
+						/*																							
+						$(this).css("margin-top","-15px");
+						$(this).css("padding", "10px");
+						$(this).css("padding-top", "15px");
+						$(this).css("padding-bottom", "0px");
+						$(this).css("margin-left", "-10px");					
+						$(this).css("z-index", "5");	
+						$(this).css("border-radius", "20px");							
+						*/
+						/*setTimeout(function(){ $(this).css("position", "relative"); }, 490);*/					
+						$(".puntos0", this).text("...Leer Más");		
+						$(".text0", this).slideUp();	
+						/*setTimeout(function(){ $(".sona0").css("box-shadow", "none"); }, 490);	*/
+						$(this).css("box-shadow", "none"); 	
+					});
+				});										
+																									
+			  } else {
+				//pliega
+				$(".puntos0", this).text("...Leer Más");		
+				$(".text0", this).slideUp();								
+				setTimeout(function(){ $(".sona0").css("position", "relative"); }, 490);
+				setTimeout(function(){ $(".sona0").css("box-shadow", "none"); }, 490);					
+			  }	
+			  	
+		});
 	});
+///////////////////////////////////////////////////////////////////
 
-	
-	$(".sona3").click(function() {
-	  var elem = $(".puntos3").text();
-	  if (elem == "...Leer Más") {
-		//Stuff to do when btn is in the read more state		
-		$("#text3").slideDown();
-		$(".puntos3").text("");		
-		/*$(".sona3").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-	  } else {
-		//Stuff to do when btn is in the read less state
-		$(".puntos3").text("...Leer Más");		
-		$("#text3").slideUp();
-		/*$(".sona3").css("box-shadow", "none");*/
-	  }
-	});
-
-	$(".sona4").click(function() {
-		var elem = $(".puntos4").text();
-		if (elem == "...Leer Más") {
-		  //Stuff to do when btn is in the read more state		
-		  $("#text4").slideDown();
-		  $(".puntos4").text("");		
-		  /*$(".sona4").css("box-shadow", "2px 2px 4px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-		} else {
-		  //Stuff to do when btn is in the read less state
-		  $(".puntos4").text("...Leer Más");		
-		  $("#text4").slideUp();
-		  /*$(".sona4").css("box-shadow", "none");*/
-		}
-	  });
-  
-	  $(".sona5").click(function() {
-		var elem = $(".puntos5").text();
-		if (elem == "...Leer Más") {
-		  //Stuff to do when btn is in the read more state		
-		  $("#text5").slideDown();
-		  $(".puntos5").text("");		
-		  /*$(".sona5").css("box-shadow", "2px 2px 5px  #bbbab8, 10px 10px 10px rgb(151, 151, 151)");*/
-		} else {
-		  //Stuff to do when btn is in the read less state
-		  $(".puntos5").text("...Leer Más");		
-		  $("#text5").slideUp();
-		  /*$(".sona4").css("box-shadow", "none");*/
-		}
-	  });
-
-	  $(".sona6").click(function() {
-		var elem = $(".puntos6").text();
-		if (elem == "...Leer Más") {
-		  //Stuff to do when btn is in the read more state		
-		  $("#text6").slideDown();
-		  $(".puntos6").text("");		
-		  /*$(".sona6").css("box-shadow", "2px 2px 6px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-		} else {
-		  //Stuff to do when btn is in the read less state
-		  $(".puntos6").text("...Leer Más");		
-		  $("#text6").slideUp();
-		  /*$(".sona4").css("box-shadow", "none");*/
-		}
-	  });
-		  
-	  $(".sona7").click(function() {
-		var elem = $(".puntos7").text();
-		if (elem == "...Leer Más") {
-		  //Stuff to do when btn is in the read more state		
-		  $("#text7").slideDown();
-		  $(".puntos7").text("");		
-		  /*$(".sona7").css("box-shadow", "2px 2px 7px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-		} else {
-		  //Stuff to do when btn is in the read less state
-		  $(".puntos7").text("...Leer Más");		
-		  $("#text7").slideUp();
-		  /*$(".sona4").css("box-shadow", "none");*/
-		}
-	  });
-	  $(".sona8").click(function() {
-		var elem = $(".puntos8").text();
-		if (elem == "...Leer Más") {
-		  //Stuff to do when btn is in the read more state		
-		  $("#text8").slideDown();
-		  $(".puntos8").text("");		
-		  /*$(".sona8").css("box-shadow", "2px 2px 8px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-		} else {
-		  //Stuff to do when btn is in the read less state
-		  $(".puntos8").text("...Leer Más");		
-		  $("#text8").slideUp();
-		  /*$(".sona4").css("box-shadow", "none");*/
-		}
-	  });
-	
-	  $(".sona9").click(function() {
-		var elem = $(".puntos9").text();
-		if (elem == "...Leer Más") {
-		  //Stuff to do when btn is in the read more state		
-		  $("#text9").slideDown();
-		  $(".puntos9").text("");		
-		  /*$(".sona9").css("box-shadow", "2px 2px 9px  #bbbab8, 10px 10px 10px rgb(141, 141, 141)");*/
-		} else {
-		  //Stuff to do when btn is in the read less state
-		  $(".puntos9").text("...Leer Más");		
-		  $("#text9").slideUp();
-		  /*$(".sona4").css("box-shadow", "none");*/
-		}
-	  });
-  });
+});

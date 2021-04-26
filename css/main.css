@@ -164,7 +164,7 @@ figure{
 	transition: all 300ms;
 	position: relative;
 	min-width: 320px;	
-	max-width: 320px;	
+	max-width: 320px;		
 	max-height: max-content;	
 	margin: 10px;
 	background-color: rgb(219, 216, 216);
@@ -174,12 +174,6 @@ figure{
 	padding-top: 20px;		
 	
 }
-
-figure:hover{		
-	padding: 10px;
-	box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
-}
-
 
 figure img{	
 	width: 50%;
@@ -257,31 +251,49 @@ figure img{
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
-@media screen and (min-width: 700px){	
+span{
+	font-size: 16px;
+}
 
-	/*
-	.div-figure{		
-		z-index: 20;	
-		border-radius: 20px;
-		background-color: rgb(219, 216, 216);
-		max-height: 250px;
-		overflow: hidden;
-		padding-bottom: 20px;
-		margin-left: -10px;	
-		padding: 0px 5px;			
-		transition: box-shadow 300ms;	
-		transition-duration: 0s ;
+@media screen and (min-width: 700px){	
+	figure{
+		position: relative;
 	}
-	*/
 	
-	.div-figure:hover{		
-		background-color: rgb(216, 216, 216);		
-		position: absolute;
-		max-height: max-content;
-		overflow: visible;
-		padding-bottom: 20px;
-		/*box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		*/
+	figure:hover{		
+		z-index: 1;				
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);				
+	}	
+
+	.div-figure{	
+		transition: all 300ms;					
+		overflow: hidden;
+		margin-top: -15px;
+		padding: 10px;
+		padding-top: 15px;
+		padding-bottom: 0px;
+		margin-left: -10px;		
+		background-color: rgb(219, 216, 216);		
+		border-radius: 20px;	
+		z-index: 0;
 	}
+	
+	
+		.div-figure:hover{				
+		background-color: rgb(219, 216, 216);
+		margin-top: -15px;
+		padding: 10px;
+		padding-top: 15px;
+		padding-bottom: 0px;
+		margin-left: -10px;					
+		max-height: max-content;							
+		/*
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	*/
+		
+		border-radius: 20px;
+		z-index: 2;
+	}
+
 	#beepc{	
 		display: none;				
 	}	
@@ -326,22 +338,10 @@ figure img{
 	.cards-container{		
 		width: 100%;		
 	}	
-		/*
-	figure{		
-		position: relative;
-		max-height: 305px;				
-		border-radius: 20px;
-		border-width: 200px;
-		padding: 10px;
-		padding-top: 20px;	
-		transition: all 400ms;	
-			
-	}	
-	*/
-	figure:hover{
-		position: relative;
-		max-height: max-content;
-	}	
+	
+	figure:hover{			
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);				
+	}
 	
 /*
 	.div-figure:hover{
