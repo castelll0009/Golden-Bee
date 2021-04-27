@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset= "utf-8">
-		<link rel="stylesheet" href="css/stylemovil.css">	
+		<link rel="stylesheet" href="css/stylemovil.css">							
 		<meta name="viewport"  content="width=device-width initial-scale=1.0">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">  
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -20,8 +20,60 @@
 			<img id="beepc" onclick="vistaEscritorio()" src="imgs/beepc.png" alt=""  >
 			<header>							
 				<div class="container-header">
-					<span id="menu-button" onClick="showMenu()" class="menu-button"><i class="fas fa-bars"></i></span>
-						
+					<nav id="main-movil" class="main-movil">
+						<div class="container-menu-movil">
+							<input id="responsive-menu" type="checkbox">
+							<label id="label-menu" for="responsive-menu"><span id="menu-icon"></span></label>
+							
+							<ul  >
+								<a href = "index.html" >
+									<li href= "index.html" ><label class="fa fa-home" style="color: #E0A023; margin-left: -40px;" ></label></li>
+								</a>
+								<a href = "menu.html" >
+									<li  >PRODUCTOS</li>
+								</a>
+								<a href = "contactos.html" >
+									<li >CONTACTOS </li>
+								</a>
+								<a href = "Acercade.html" >
+									<li >ACERCA DE </li>
+								</a>																
+								<li style="color: #E0A023; font-weight: bold;">INICIAR SESION</li>
+							</ul>
+				 
+				   
+							<ul id="social-media">
+								<li>
+									<a href="www.facebook.com">
+										<i class="fab fa-facebook"></i>                        
+									</a>
+								</li>
+								<li>
+									<a href="http://codepen.io/erinesullivan/">
+										<i class="fab fa-whatsapp"></i>                        
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/erin_e_sullivan">
+										<i class="fab fa-twitter"></i>                        
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/erinesullivan1">
+										<i class="fab fa-linkedin"></i>
+									  
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/erin_e_sullivan/">
+										<i class="fab fa-instagram"></i>
+									
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>	
+					
 					<div  class="container-logo-title">				
 						<img id="zumbido" onClick="buzzing()" class="animate__animated animate__shakeX animate__fast" src="imgs/logo.png" alt="">
 						<h1>Golden Bee</h1>
@@ -45,7 +97,7 @@
 							</a>																
 							<li style="color: #E0A023; font-weight: bold;">INICIAR SESION</li>
 						</ul>
-					</div>
+					</div>					
 				</div>
 			</header>	
 			<div class="info-container" >		
@@ -265,6 +317,7 @@
 		</audio>
 
 		<script src="js/menu.js"></script>	
+		<script src="js/buttom_menu.js"></script>	
 		<script src="js/jquery.js"></script>  				
 	</body>
 </html>

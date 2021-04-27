@@ -1,93 +1,52 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #1d1f20;
-    color: #e5e5e5;
-    font: 16px/1.25 'Raleway', sans-serif;
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-}
-
-a {
-    color: #a2ed56;
-}
-
-a:hover {
-    color: #83e4e2;
-    text-decoration: none;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 80em;
-}
-
-main .container {
-    padding: 1em;
-}
-
-p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 40em;
-}
-
-.screen-reader-text {
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute !important;
-    width: 1px;
-}
 
 
 
 /************************************************/
 /****************** NAVIGATION ******************/
 /************************************************/
-nav {
+
+#main-movil {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: none;
     background: #e5e5e5;
     color: #1d1f20;
     left: 0;
     position: relative;
     top: 0;
-    width: max-content;
-    z-index: 9999;
+    
+    max-width: auto;
+    z-index: 9999;    
 }
 
 /*** INPUT ***/
-nav input {
+nav #main-movil ,input {
+  
     opacity: 0;
     position: absolute;
-    z-index: -1;
+    z-index: -1;    
 }
 
 /*** LABEL ***/
-nav label {
-    width: 100px;
+nav #main-movil, label{    
+    margin-bottom: 0;
+    width: 65px;    
     cursor: pointer;
     display: inline-block;
     font: 2em/1 'Oswald', sans-serif;
     padding: 0.5em;
 }
+.container-menu-movil {
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    max-width: auto;      
+    padding: 10px;
+}
+
 
 /* Hamburger Icon */
 #menu-icon,
@@ -96,20 +55,19 @@ nav label {
     background: #1d1f20;
     border-radius: 0.05em;
     height: 0.2em;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    
+    transition: all 0.2s ease-in-out;    
+    width: 100%;            
 }
 
-#menu-icon {
+#menu-icon {    
     display: inline-block;
     margin: 0.4em 0;
     max-width: 1em;
     position: relative;
 }
 
-nav label #menu-icon {
-    float: left;
+nav #main-movil label ,#menu-icon {
+    float: left;    
 }
 
 #menu-icon:before,
@@ -128,16 +86,16 @@ nav label #menu-icon {
 }
 
 /* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
+nav #main-movil ,input[type=checkbox]:checked + label #menu-icon {
     background: transparent;
 }
 
-nav input[type=checkbox]:checked + label #menu-icon:before {
+nav #main-movil ,input[type=checkbox]:checked + label #menu-icon:before {
     top: 0;
     transform: rotate(-45deg);
 }
 
-nav input[type=checkbox]:checked + label #menu-icon:after {
+nav #main-movil ,input[type=checkbox]:checked + label #menu-icon:after {
     bottom: 0;
     transform: rotate(45deg);
 }
@@ -145,21 +103,9 @@ nav input[type=checkbox]:checked + label #menu-icon:after {
 
 /*** MENU ***/
 /* Overlay */
-nav input:checked ~ #overlay {
-    background: #e5e5e5;
-    bottom: 0;
-    left: 0;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    /*width: 100vw;*/    
-    width: max-content;
-    z-index: -1;
-}
 
 /* List */
-nav ul {
+nav #main-movil ,ul {        
     font-size: 1.5em;
     list-style: none;
     margin: 0;
@@ -170,28 +116,37 @@ nav ul {
     text-align: center;
 }
 
-nav input:checked ~ ul {
-    margin: 1em;
+nav #main-movil ,input:checked ~ ul {    
+    transition:  all 1s;    
     max-height: inherit;
     opacity: 1;
+    
+}
+nav #main-movil ,input:checked ~ ul#social-media > li {    
+    display: inline-block;
+    
 }
 
-nav ul > li {
-    margin: 0.5em 0;
+
+nav #main-movil ,ul > li {    
+    margin: 0.5em 0;    
 }
 
-nav ul a {
+nav #main-movil ,ul a {        
     color: #1d1f20!important;
     text-decoration: none;
 }
 
-nav ul a:hover {
+nav #main-movil ,ul a:hover {    
     text-decoration: underline;
 }
-
+i:hover{
+    color : white;
+}
 /* Social Media */
-nav ul#social-media > li {
-    display: inline-block;
+
+nav #main-movil ,ul#social-media > li {           
+    display: none;
     font-size: 1.5em;
-    margin: 0.5em;
+    margin: 0.5em;           
 }

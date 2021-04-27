@@ -21,28 +21,7 @@ function vistaEscritorio(){
 
 /*///////////JQUERY///////////////////////////////////////*/
 /*///////////JQUERY///////////////////////////////////////*/
-
-//#region  estadobase
-
-/*var div_figure = document.querySelector(".div-figure");*/
-/*
-function estadoBase(){
-	$(".puntos").text("...Leer Más");		
-	$("#text").slideUp();
-	$(".sona").css("box-shadow", "none");
 	
-	$(".puntos2").text("...Leer Más");		
-	$("#text2").slideUp();
-	$(".sona2").css("box-shadow", "none");
-
-	$(".puntos3").text("...Leer Más");		
-	$("#text3").slideUp();
-	$(".sona3").css("box-shadow", "none");	
-
-}*/
-//#endregion	
-
-
 $(document).ready(function() {		
 	
 	$(document).ready(() => {
