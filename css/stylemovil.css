@@ -52,8 +52,7 @@ header{
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 700px){	
     .container-menu-movil{
-        display: none;
-
+        display: none;     
     }
     
 .container-menu{
@@ -170,27 +169,28 @@ header{
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-    .container-menu{
+    .container-menu{        
         display: none;
     }
    
     .container-header{
+        margin-left: -10.5px; 
         padding: 0;  
         text-align: center;      
         justify-content: center;
         width: 100%;        
-    }   
-
+    }
     #main-movil {
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: none;
-        background: #e5e5e5;     
+        background: #0e0e0e;     
         background: transparent;   
         color: #1d1f20;        
-        width: 100px;
+        width: max-content;        
         margin: auto;        
-        position: absolute;               
+        position: absolute;           
+        
         max-width: auto;
         z-index: 9999;    
     }
@@ -210,11 +210,10 @@ nav #main-movil, label{
     font: 2em/1 'Oswald', sans-serif;
     padding: 0.5em;
 }
-.container-menu-movil{     
+.container-menu-movil{          
     margin: 0px;    
     padding-bottom: -200px;       
 }
-
 
 /* Hamburger Icon */
 #menu-icon,
@@ -294,8 +293,8 @@ nav #main-movil ,input:checked ~ ul {
     
 }
 nav #main-movil ,input:checked ~ ul#social-media > li {    
-    display: inline-block;
-    
+    display: inline-block;    
+    margin-bottom: -20px;
 }
 
 
@@ -304,7 +303,7 @@ nav #main-movil ,ul > li {
 }
 
 nav #main-movil ,ul a {        
-    color: #1d1f20!important;
+    color: #ffffff!important;
     text-decoration: none;
 }
 

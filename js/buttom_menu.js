@@ -3,7 +3,7 @@ $("label").click(function(){
    contador = contador + 1;   
    if(  contador <= 1)  {
     $("#main-movil").css("width", "100%");
-    $("#main-movil").css("background", " #e5e5e5");
+    $("#main-movil").css("background", " #2c2c2c");    
     
    }else{
     $("#main-movil").css("width", "100px"); 
