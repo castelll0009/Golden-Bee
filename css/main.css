@@ -1,34 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
 body{		
 	font-family: 'Kaushan Script', cursive;
 	font-family: 'Lato', sans-serif;
 	font-family: 'Zilla Slab', serif;
-	-webkit-user-select: none;
-	
+	background-color: #07070A;
+	/*-webkit-user-select: none;*/
+	/*background-image: url(../imgs/fondo-portada.jpg);
+	background-size: cover;	
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+	*/
+	color: white;
 }
+	
+
 main{				
 	padding: 10px;				
 }
-.conten
+.container-esquema{	
+	width: 100%;	
+	position: relative;
+	
+}
+.img-esquema{
+	margin-top: -2px;
+	width:  100%;
+	height: auto;
+	position: fixed;	
+	z-index: -3;
+}
+.grad1{
+	position: absolute;
+	width: 100%;
+	height: max-content;        
+	/*backdrop-filter:  blur(4px);*/
+	/*background-color: rgba(26, 26, 26, 0.7); ;*/	
+	display: block;    
+  	background-image: linear-gradient(to top, rgba(7,7,10,0.9),  rgba(7,7,10,0.9), rgba(7,7,10,0.85), rgba(7,7,10,0.8), rgba(7,7,10,0.7), rgba(7,7,10,0.0));
+	z-index: -1;
+}
+
+.img-foto{
+	width: 100%;
+	position: fixed;
+	z-index: -2;
+}
+
 #info-title{
 	color: #E0A023;
-	margin-top: 20px;
+	margin-top: 200px;
 	font-size: 5em;
 }
-#zumbido{	
+#zumbido {		
+	width: auto;	
+	height: 40%;
+	z-index: 20;
 	cursor: pointer;
 }
+
 
 #zumbido:active {	
 	animation: step-start;
 	animation-duration: 0.2s;
 }
 
+/*
 #img-home{	
 	margin-top: 60px;
 	width: 30%;
 	border-radius: 60%;   	
 	box-shadow: none;	 			
 }
+*/
 
 a{
 	color:#F2D02F;
@@ -48,9 +99,7 @@ article{
   /*border: 3px solid green;*/
   padding: 10px;
 }
-.espacio-arriba{
-	margin-top:50px;
-}
+
 .fuente-kaushan{
 	font-family: 'Kaushan Script', cursive;
 }
@@ -137,7 +186,7 @@ h2{
 /*	INFO CONTAINER INFORMACION NORMAL DE LA PAGINA WEB*/
 .info-container{
 	text-align: center;
-	 margin-top: 80px;
+	 margin-top: 120px;
 }
 .img-logo{	
 	width: 9%;		
@@ -167,7 +216,7 @@ figure{
 	max-width: 320px;		
 	max-height: max-content;	
 	margin: 10px;
-	background-color: rgb(219, 216, 216);
+	background-color: rgb(24, 23, 23);
 	border-radius: 20px;
 	border-width: 200px;
 	padding: 10px;
@@ -273,7 +322,7 @@ span{
 		padding-top: 15px;
 		padding-bottom: 0px;
 		margin-left: -10px;		
-		background-color: rgb(219, 216, 216);		
+		background-color: rgb(32, 32, 32);		
 		border-radius: 20px;	
 		z-index: 0;
 	}
@@ -302,6 +351,12 @@ span{
 /*movil///////////////////////////////////////////*/
 /*movil///////////////////////////////////////////*/
 @media screen and (max-width: 700px){	 
+	#zumbido {		
+		width: auto;	
+		height: 25%;
+		z-index: 20;
+		cursor: pointer;
+	}
 
 	#beepc{					
 		width:  10%;

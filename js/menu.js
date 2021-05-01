@@ -1,9 +1,9 @@
-var sound = document.getElementById("buzz");
-var btn = document.getElementById("zumbido");	
+var sound = document.getElementById("sonido-logo");
 var beepc = document.querySelector("#beepc");
+var var_header= document.querySelector("header");
 
 
-function buzzing() {					
+function sonidoLogo() {					
 	sound.play();			
 }		
 
@@ -18,6 +18,46 @@ function vistaEscritorio(){
 		zoom = false;
 	}		
 }
+/*///////////FUNCIONES///////////////////////////////////////*/
+/*///////////FUNCIONES///////////////////////////////////////*/
+
+
+/*cambiar la apariencia de la barra superiro al mover la rueda del mouse hacia */
+/*{
+	function scrollDetect(){
+		var lastScroll = 0;
+	  
+		window.onscroll = function() {
+			let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+	  
+			if (currentScroll > 0 && lastScroll <= currentScroll){
+			  lastScroll = currentScroll;
+			  document.getElementById("scrollLoc").innerHTML = "Scrolling DOWN";
+			}else{
+			  lastScroll = currentScroll;
+			  document.getElementById("scrollLoc").innerHTML = "Scrolling UP";
+			}
+		};
+	  }
+	  
+	  
+	  scrollDetect();
+}
+*/
+window.onscroll = function() {
+  var y = window.scrollY;
+  if(y > 32){	  	  
+	var_header.style  =   "background-color : black";
+  }else{
+	var_header.style  =   "background-color : transparent";
+  }
+  
+};
+
+
+
+
+
 
 /*///////////JQUERY///////////////////////////////////////*/
 /*///////////JQUERY///////////////////////////////////////*/
