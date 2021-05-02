@@ -15,25 +15,17 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<title>5GT</title>
 	</head>
-	<body >
-		
-		<div class="container-fotos ">			
-			<img class="img-foto" src="imgs/foto1.png" >
-		</div>
-
-		<span class="velo-menu" ></span>
-		<main class="grad1">						
-			
+	<body>
+		<main>
 			<img id="beepc" onclick="vistaEscritorio()" src="imgs/beepc.png" alt=""  >
-			<header>		
-				<!-- cabecera menu y demas -->				
+			<header>							
 				<div class="container-header">
 					<nav id="main-movil" class="main-movil">
 						<div class="container-menu-movil">
 							<input id="responsive-menu" type="checkbox">
 							<label id="label-menu" for="responsive-menu"><span id="menu-icon"></span></label>
 							
-							<ul  > 
+							<ul  >
 								<a href = "index.html" >
 									<li href= "index.html" ><label class="fa fa-home" style="color: #E0A023; margin-left: -40px;" ></label></li>
 								</a>
@@ -62,13 +54,14 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a href=""></a>
 										<i class="fab fa-twitter"></i>                        
 									</a>
 								</li>
 								<li>
 									<a href="">
-										<i class="fab fa-linkedin"></i>									  
+										<i class="fab fa-linkedin"></i>
+									  
 									</a>
 								</li>
 								<li>
@@ -82,14 +75,14 @@
 					</nav>	
 					
 					<div  class="container-logo-title">				
-						<img id="zumbido" onClick="sonidoLogo()" class=" zumbido animate__animated animate__shakeX animate__fast"  src="imgs/logo-mojitos.png" >
-						<h1>Mojitos</h1>
-						<h2 >cafe-bar</h2>
+						<img id="zumbido" onClick="buzzing()" class="animate__animated animate__shakeX animate__fast" src="imgs/logo.png" alt="">
+						<h1>Golden Bee</h1>
+						<h2 style="font-size: 0.6em; margin-top: 20px;">ACIAGO </h2>
 					</div>
 	
-					<div class="container-menu">
+					<div id="menu-desplegable" class="container-menu">
 						<nav class="menu"></nav>
-							<ul  class="menu-ul">
+							<ul  class=" menu-ul">
 							<a href = "index.html" >
 								<li href= "index.html" ><label class="fa fa-home" style="color: #E0A023" ></label></li>
 							</a>
@@ -108,14 +101,12 @@
 				</div>
 			</header>	
 			<div class="info-container" >		
-				<!--
-					<img id="img-home" src= "imgs/fondo-portada.jpg" class="animate__animated animate__fadeIn">	
-				-->				
+				<img id="img-home" src= "imgs/palo-redondo.gif" class="animate__animated animate__fadeIn img-tam-mediano">			
 				<h1 id="info-title" class="fuente-kaushan fuente-tam color-verde animate__animated animate__fadeIn"> 
-					<img class="img-logo" src="" alt="">Menu</h1>		
+					<img class="img-logo" src="imgs/logo.png" alt="">Golden Bee</h1>		
 				<div id="div-index" class="animate__animated animate__flipInX">
-					<h2 class="fuente-lato" style="font-size: 1.5em; margin-top:-15px;" >El sitio mas agradable para compartir.</h2>
-					<p style="margin-top: 30px;">Aqui podras ver nuestro menu y elegir lo que desees ,  brinda la oportunidad de deleitarte en cualquier lugar de la forma mas natural.</p>				
+					<h2 class="fuente-lato" style="font-size: 1.5em; margin-top:-15px;" >Sabor de la Naturaleza, del campo a tu mesa.</h2>
+					<p style="margin-top: 30px;">Nuestra empresa te brinda la oportunidad de deleitarte en cualquier lugar de la forma mas natural.</p>				
 				</div>				
 			</div>
 
@@ -123,7 +114,7 @@
 				<figure class="figure-container">
 					<div class="sona0 sona div-figure " >
 						<img src="imgs/icono-mision.png" alt="">
-						<h1>Bebidas</h1>
+						<h1>Mision</h1>
 						<p>Golden Bee Tiene como misión fomentar la
 							<span class="puntos0  puntos" style="color:rgb(167, 158, 158)">...Leer Más</span>
 							<span class="text0" id="text">
@@ -336,8 +327,8 @@
 			</nav>				
 			
 		</main>	  
-		<audio id="sonido-logo">	  
-	  		<source src="brindis2.mp3" type="audio/mpeg">
+		<audio id="buzz">	  
+	  		<source src="buzz.mp3" type="audio/mpeg">
 	  		Your browser does not support the audio element.
 		</audio>
 

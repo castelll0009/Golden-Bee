@@ -1,35 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
 
-
-header{        
-    text-align: center;
+header{
     width: 100%;
     height: 110px;
-    /*border-bottom: 1px solid #F2D02F;*/
+    border-bottom: 1px solid #F2D02F;
     position: fixed;
     z-index: 100;
     background: white;
-    margin-left: -10px;
-    padding-left: 20px;        
     top: 0;    
-    color: white;
-    background-color: transparent;
-    transition:  all 400ms;
-    /*background-color: rgb(9, 11, 19);*/
            
 }
 
-.container-header{                
+.container-header{    
     width: 100%;
     max-width: 1220px;    
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    position: relative;
     margin: auto;
-    padding-right: 200px;
-    padding-left: 200px;        
+    padding-right: 100px;
+    padding-left: 100px;
+    /*margin-right: 0px;*/
 }
 
-.container-logo-title{             
+.container-logo-title{
     display: flex;
     margin-top: 5px;    
     margin-left: 10px;  
@@ -46,28 +47,26 @@ header{
     margin-left: 10px;
 }
 
-
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 700px){	
-  
-    .container-menu-movil{     
-        
-        display: none;             
+    .container-menu-movil{
+        display: none;     
     }
     
-    .container-menu{    
-        margin-top: 20px;        
+.container-menu{
+    /*    display: flex;*/
+        margin-top: 20px;
     }
     
-    .menu{        
+    .menu{
         position: absolute;
         right: 10px;
         margin-top: 20px;    
     }
     
-    .menu ,ul{             
+    .menu ,ul{     
         display: flex;
     }
     
@@ -81,7 +80,6 @@ header{
         cursor: pointer;
         transition: border 300ms;
         position: relative;
-        color: white;
     }
     
     .menu ul li label,
@@ -163,51 +161,6 @@ header{
     }
     
 }
-/*efectos de difuminado*/
-/*
-.kwNlyz -> InIeje
-*/
-.container-logo-title {
-    background-color: transparent;
-}
-
-/*  dvbqpA  -> iVXnyK */
-.dvbqpA {
-    -webkit-box-align: center;
-    align-items: center;
-    background-color: transparent;
-    display: flex;
-    flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    left: 0px;
-    padding: 0px 20px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    transition: all 0.2s ease-in-out 0s;
-    will-change: background-color, height;
-    height: 72px;
-}
-
-.kwNlyz::after {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.03) 15%, rgba(0, 0, 0, 0.125) 30%, rgba(0, 0, 0, 0.25) 46%, rgba(0, 0, 0, 0.4) 61%, rgba(0, 0, 0, 0.553) 75%, rgba(0, 0, 0, 0.694) 88%, rgba(0, 0, 0, 0.8));
-}
-
-.dvbqpA::after {
-    background: radial-gradient(circle at 100% 0px, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.15) 10%, rgba(0, 0, 0, 0.047) 15%, rgba(0, 0, 0, 0) 22%);
-    content: "";
-    height: 170px;
-    left: 0px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    transition: height 300ms ease 0s;
-    z-index: -1;
-    will-change: height;
-    pointer-events: none;
-}
-
 /*//////////////////////////////////MOVIL/////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -216,34 +169,6 @@ header{
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-    .velo-menu{
-        position: fixed;
-        width: 100%;
-        height: 100%;        
-        backdrop-filter:  blur(4px);
-        background-color: rgba(26, 26, 26, 0.7); ;
-        z-index: 1;
-        display: none;
-    }
-    header{
-        max-height: 50px;
-    }
-    .container-logo-title{                
-        text-align: left;
-        justify-content: left;
-    }
-
-    .container-logo-title h1{    
-        font-size: 1.5em;
-        
-        margin-top: 0px;
-    }
-    .container-logo-title h2{    
-        font-size: 0.8em;
-        margin-top: 8px;
-        margin-left: 5px;
-        
-    }
     .container-menu{        
         display: none;
     }
@@ -255,21 +180,19 @@ header{
         justify-content: center;
         width: 100%;        
     }
-    #main-movil {                
-
+    #main-movil {
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: none;
-        background: #ca0808;     
+        background: #0e0e0e;     
         background: transparent;   
         color: #1d1f20;        
-        width: max-content;                     
-        position:fixed;                   
-        right: -470px;
-        top: -55px;
+        width: max-content;        
+        margin: auto;        
+        position: absolute;           
         
-        min-width: 1000px ;
-        z-index: 10;    
+        max-width: auto;
+        z-index: 9999;    
     }
     /*** INPUT ***/
     nav #main-movil ,input {  
@@ -285,10 +208,9 @@ nav #main-movil, label{
     cursor: pointer;
     display: inline-block;
     font: 2em/1 'Oswald', sans-serif;
-    padding: 0.5em;    
-    margin-left: 5px; 
+    padding: 0.5em;
 }
-.container-menu-movil{              
+.container-menu-movil{          
     margin: 0px;    
     padding-bottom: -200px;       
 }
@@ -298,7 +220,7 @@ nav #main-movil, label{
 #menu-icon:before,
 #menu-icon:after{
   
-    background: #ffffff;
+    background: #ff8a04;
     border-radius: 0.05em;
     height: 0.2em;
     transition: all 0.2s ease-in-out;    
@@ -312,8 +234,9 @@ nav #main-movil, label{
     position: relative;
 }
 
-nav #main-movil label ,#menu-icon {        
-    position: relative; 
+nav #main-movil label ,#menu-icon {    
+    position: relative;
+ 
     margin-top: 50px;
 }
 
@@ -333,7 +256,7 @@ nav #main-movil label ,#menu-icon {
 }
 
 /* Close Icon */
-nav #main-movil ,input[type=checkbox]:checked + label #menu-icon  {
+nav #main-movil ,input[type=checkbox]:checked + label #menu-icon {
     background: transparent;
 }
 
@@ -387,10 +310,8 @@ nav #main-movil ,ul a {
 nav #main-movil ,ul a:hover {    
     text-decoration: underline;
 }
-
 i:hover{
-    font-size: 1.2em;;
-    color : rgb(122, 122, 122);
+    color : white;
 }
 /* Social Media */
 
